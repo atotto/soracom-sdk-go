@@ -342,6 +342,12 @@ type Subscriber struct {
 	TerminationEnabled bool            `json:"terminationEnabled"`
 }
 
+// Sim represents a SIM resource in the SORACOM platform.
+type Sim struct {
+	SimID         string         `json:"simId"`
+	SessionStatus *SessionStatus `json:"sessionStatus"`
+}
+
 // PaginationKeys holds keys for pagination
 type PaginationKeys struct {
 	Prev string
