@@ -335,6 +335,7 @@ type Subscriber struct {
 	Plan               int             `json:"plan"`
 	SerialNumber       string          `json:"serialNumber"`
 	SessionStatus      *SessionStatus  `json:"sessionStatus"`
+	SimID              string          `json:"simId"`
 	SpeedClass         string          `json:"speedClass"`
 	Status             string          `json:"status"`
 	Tags               Tags            `json:"tags"`
