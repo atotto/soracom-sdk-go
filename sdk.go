@@ -415,6 +415,13 @@ func parseSubscriber(resp *http.Response) *Subscriber {
 	return &sub
 }
 
+func parseSim(resp *http.Response) *Sim {
+	var sim Sim
+	dec := json.NewDecoder(resp.Body)
+	_ = dec.Decode(&sim)
+	return &sim
+}
+
 type updateSpeedClassRequest struct {
 	SpeedClass string `json:"speedClass"`
 }
